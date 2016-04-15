@@ -1,0 +1,140 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+   .top-features-list {
+   	min-height: 520px;
+   }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.main-header {
+		margin-bottom: -16rem;
+	}
+
+	.header-mobile {
+		background: rgba(0,0,0,0.3);
+	}
+
+  .desktop-version {
+		display: none;
+	}
+	.logo-discr, .logo-wrap {
+		text-align: center;
+	}
+	.phone-top {
+		text-align: left;
+	}
+	.language {
+		padding-top: 4.2rem;
+		margin-bottom: 3.5rem;
+	}
+	h1 {
+		font-size: 3.3rem;
+		text-transform: uppercase;
+	}
+	.main-screen-subheadline {
+		font-size: 1.8rem;
+		color: #fff;
+	}
+	.top-fitures-list__item {
+		color: #fff;
+	}
+	.top-btn {
+		font-size: 2rem;
+		margin-bottom: 5rem;
+	}
+	.top-form-sec-headline {
+		padding-top: 4rem;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+}
+@media only screen and (max-width : 580px) {
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	h1 {
+		font-size: 3rem;
+	}
+	.main-headline {
+		font-size: 2.8rem;
+	}
+	.top-features-list {
+		min-height: 570px;
+	}
+	.top-fitures-list__item {
+		margin-bottom: 3.5rem;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.phone-top {
+		text-align: left;
+	}
+	h1 {
+		font-size: 2.5rem;
+	}
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 993px) {
+	.mobile-version {
+		display: none;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

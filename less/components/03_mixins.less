@@ -1,0 +1,18 @@
+.size( @height: auto; @padding: 0; @width: 100%) {
+	width: @width;
+	height: @height;
+	padding: @padding;
+}
+
+.bg( @this-bg ) {
+	background: url("@{dir}@{this-bg}") no-repeat center top;
+}
+
+.headings (@fs: @h2; @fw: @bold; @ta: center; @tt: uppercase; @lh: 1.3; @mb: 30px; ) {
+	font-size: @fs;
+	font-weight: @fw;
+	text-align: @ta;
+	text-transform: @tt;
+	line-height: @lh;
+	margin-bottom: @mb;
+}

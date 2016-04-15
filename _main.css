@@ -1,0 +1,467 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700italic,500italic&subset=latin,cyrillic);
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+html,
+body {
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  line-height: 0.8;
+  margin: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+h1 {
+  font-size: 5rem;
+  line-height: 1.3;
+}
+h2 {
+  font-size: 3.2rem;
+  line-height: 1.3;
+}
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+h4 {
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+h5 {
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+h6 {
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+a {
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+a:hover {
+  text-decoration: none;
+}
+.btn {
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+.form-btn {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: 0px -1px 0px rgba(39, 18, 14, 0.36);
+  border-radius: 5px;
+  border: none;
+  padding: 1.8rem 5.4rem;
+  background: -moz-linear-gradient(90deg, #3cc868 35%, #20b252 100%);
+  background: -webkit-linear-gradient(90deg, #3cc868 35%, #20b252 100%);
+  background: -ms-linear-gradient(90deg, #3cc868 35%, #20b252 100%);
+  -webkit-box-shadow: 2px 4px 1px 0px rgba(71, 71, 71, 0.59);
+  -moz-box-shadow: 2px 4px 1px 0px rgba(71, 71, 71, 0.59);
+  box-shadow: 2px 4px 1px 0px rgba(71, 71, 71, 0.59);
+  transition: all 0.15s ease;
+}
+.form-btn:hover {
+  background: -moz-linear-gradient(90deg, #20b252 0%, #3cc868 65%);
+  background: -webkit-linear-gradient(90deg, #20b252 0%, #3cc868 65%);
+  background: -ms-linear-gradient(90deg, #20b252 0%, #3cc868 65%);
+  -webkit-box-shadow: 2px 4px 1px 0px rgba(71, 71, 71, 0.59);
+  -moz-box-shadow: 2px 4px 1px 0px rgba(71, 71, 71, 0.59);
+  box-shadow: 2px 4px 1px 0px rgba(71, 71, 71, 0.59);
+}
+.form-btn:active {
+  transform: translateY(2px);
+  text-decoration: none;
+  outline: none;
+}
+.form-btn:focus {
+  text-decoration: none;
+  outline: none;
+}
+input,
+textarea {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+button {
+  font-family: 'Roboto', sans-serif !important;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.top-form-sec {
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.main-headline {
+  font-size: 3.1em;
+  text-transform: uppercase;
+}
+.top-form-sec-headline {
+  margin-bottom: 4.4rem;
+}
+.top-form-fiture__item {
+  min-height: 60px;
+  font-size: 1.6rem;
+  color: #313131;
+  padding-left: 8rem;
+  line-height: 1.5;
+  background: url("img/top-form-sprite.png") no-repeat top left;
+  margin-bottom: 5.5rem;
+}
+.top-form-fiture__item_1 {
+  background-position: -30px -30px;
+}
+.top-form-fiture__item_2 {
+  background-position: -30px -140px;
+}
+.top-form-fiture__item_3 {
+  background-position: -30px -256px;
+}
+.notice {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.top-form-wrap {
+  padding-top: 4rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-bottom: 1.5rem;
+  background: #FFB163;
+  text-align: center;
+}
+.top-form-wrap h3 {
+  font-size: 2.8rem;
+  color: #7f3f00;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.top-form-wrap p {
+  color: #7f3f00;
+  text-align: left;
+  padding-left: 1rem;
+  margin-bottom: 3rem;
+}
+.top-form-wrap p span {
+  text-transform: uppercase;
+}
+.top-form-wrap .input-group {
+  max-width: 270px;
+  height: 4.8rem;
+  overflow: hidden;
+  border: 1px solid #E58E37;
+  border-radius: 5px;
+  margin-bottom: 0.6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.top-form-wrap .input-group input {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: none;
+  padding-left: 2rem;
+}
+.main-form-top span {
+  display: block;
+}
+input,
+textarea {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+button {
+  font-family: 'Roboto', sans-serif !important;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input,
+textarea {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+button {
+  font-family: 'Roboto', sans-serif !important;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.6rem;
+  color: #6a6a6a;
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
