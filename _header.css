@@ -10,14 +10,15 @@ body {
 .hidden {
 	display: none;
 }
-.no-padding {
-  padding: 0 !important;
-}
+
 .main-header {
+  position: relative;
   width: 100%;
   min-height: 782px;
-  background: url("img/main-screen-bgr.jpg") no-repeat top left;
+  background: url("img/main-screen-bgr.png") no-repeat top left;
   background-size: cover;
+  margin-bottom: -54px;
+  z-index: 10;
 }
 .logo-wrap {
   padding-top: 3rem;

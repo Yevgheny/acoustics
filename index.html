@@ -26,6 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     
 
 </head>
@@ -38,7 +39,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="logo-wrap">
-                        <a href="#"><img src="img/logo-top.png" alt="логотип"></a>
+                        <a href="http://arena-center.com.ua/" target="blank"><img src="img/logo-top.png" alt="логотип"></a>
                     </div> 
                     <div class="logo-discr">
                         <span>Акустические системы для любого 
@@ -61,7 +62,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="buttton-wrap"><a href="#" class="btn top-btn">Обратный звонок</a></div>
+                        <div class="buttton-wrap"><a href="#" data-remodal-target="modal-1" class="btn top-btn">Обратный звонок</a></div>
                     </div>
                 </div>
             </div>
@@ -70,7 +71,7 @@
                     <div class="col-md-12">
                         <div class="col-sm-3 no-padding">
                             <div class="logo-wrap">
-                                <a href="#"><img src="img/logo-top.png" alt="логотип"></a>
+                                <a href="http://arena-center.com.ua/" target="blank"><img src="img/logo-top.png" alt="логотип"></a>
                             </div>
                         </div>
                         <div class="col-md-4">                   
@@ -86,7 +87,7 @@
                                 <span>Azərbaycan</span>
                                 <a href="#"><img src="img/language-ico-1.png" alt="смена языка"></a>
                             </div>
-                            <div class="buttton-wrap"><a href="#" class="btn top-btn">Обратный звонок</a></div>
+                            <div class="buttton-wrap"><a href="#" data-remodal-target="modal-1" class="btn top-btn">Обратный звонок</a></div>
                         </div>
                     </div>
                 </div>
@@ -147,13 +148,251 @@
                                 Обучение одного из Ваших сотрудников ремонту и профилактике акустической системы
                             </li>
                         </ul>
-                        <div class="notice">Важно! Подарки можно получить <br>только до конца апреля.</div>
+                        <div class="notice">Важно! Подарки можно получить <br>только до конца апреля</div>
+                        <div id="countbox"></div>
                     </div>
                     <div class="col-md-4 col-md-offset-1">
                         <div class="top-form-wrap">
                             <h3>Заполните форму</h3>
-                            <p>для того, чтобы получить <br>бесплатно все 3 подарка!</p>
-                            <form action="" method="post" class="main-form-top" name="main-form">    
+                            <p>для того, чтобы получить <br><span>бесплатно</span> все 3 подарка!</p>
+                            <form action="mail.php" method="post" id="main-form-top" class="main-form-top" name="main-form">    
+                                <!-- Hidden Required Fields -->
+                                <input type="hidden" name="project_name" value="lawn">
+                                <input type="hidden" name="admin_email" value="yevgheny78@gmail.com">
+                                <input type="hidden" name="form_subject" value="Заявка с сайта arena-center">
+                                <!-- END Hidden Required Fields -->
+                                <div class="input-group">
+                                    <input type="text"  name="name" placeholder="Ваше имя" required>
+                                </div> 
+
+                                <div class="input-group">
+                                    <input type="text"  name="email" placeholder="Ваш email" required>
+                                </div>
+
+                                <div class="input-group">
+                                    <input type="text"  name="phone" id="phone" placeholder="Ваш телефон" required>
+                                </div>                                
+                            
+                                <input type="hidden"  name="s_formi" value="Получить подарки">
+                                <button type="submit" name="submit" class="btn form-btn">Получить подарки</button>
+                                <span>Наш менеджер свяжется с Вами <br>в течение 5 минут</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </div>
+</section>
+
+<section class="difficulties">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="main-headline difficulties-headline">Трудности с которыми сталкиваются при покупке и установке акустической системы:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4">
+                    <div class="difficulties-fit-wrap">
+                        <img src="img/gifficulties-fit-pic-1.jpg" alt="трудность номер один">
+                        <p>Вы не знаете, как подобрать подходящую для Вашего помещения акустику</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="difficulties-fit-wrap">
+                        <img src="img/gifficulties-fit-pic-2.jpg" alt="трудность номер два">
+                        <p>Неправильная установка аппаратуры приводит к частым поломкам</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="difficulties-fit-wrap">
+                        <img src="img/gifficulties-fit-pic-3.jpg" alt="трудность номер три">
+                        <p>Вы дополнительно оплачиваете стоимость работ за установку системы  и постгарантийное обслуживание</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="success-work">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-1">
+                <h2 class="main-headline white-col success-headline">Более 15 лет успешной работы с акустическими системами</h2>
+                <ul>
+                    <li>
+                        Мы решаем все вопросы при отправке товара зарубеж, а также обеспечиваем доставку, таможенное оформление и юридическое сопровождение;
+                    </li>
+                    <li>
+                        Создаем и просчитываем индивидуальное предложение в течение 1 дня;
+                    </li>
+                    <li>
+                        Предоставляем гарантию 1 год и постгарантийное обслуживание 24/7;
+                    </li>
+                    <li>
+                        Используем специальные лицензированные программы наших инженеров при составлении технического плана обеспечивающего равномерное покрытие звукапо всему объекту;
+                    </li>
+                    <li>
+                        Компания имеет представительства в двух странах: Украина и Азербайджан. Штаб-квартира находится в Украине (г. Львов).
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="options">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="main-headline  options-headline">Настройте все функции акустической системы за 5 секунд через свой мобильный или планшет</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-6 options-pic-wrap">
+                    <img src="img/options-pic.jpg" alt="функции аккустицеской стистемы">
+                </div>
+                <div class="col-md-6">
+                    <ul class="options-list">
+                        <li>Объединяйте все заведения Вашей собственности и управляйте ими в несколько кликов: менять и дополнять музыку, делать громче или тише, настраивать частоты, подключать радио эфир;</li>
+                        <li>Телефон сообщит Вам, если какая-либо деталь выйдет из рабочего состояния;</li>
+                        <li>Объединяйте аудио и видео системы, управляя и настраивая их для клиентов автономно, в каждый зал; </li>
+                        <li>Управляйте «умной» системой с помощью мобильного устройства при этом, не находясь на территории заведения или страны;</li>
+                        <li>Включайте рекламные аудио-/видеоролики с нужной частотой воспроизведения тогда, когда это нужно Вам.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="clients clients-top">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="main-headline clients-top-headline">Мы не делим клиентов на важных и не важных, каждый из них, как член семьи</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 slider-sec-wrap">
+                <div class="col-md-5 col-md-offset-1 no-padding">
+                    <div id="sync1" class="owl-carousel gallery-slider sync1">
+                        <div class="item sync1-item">
+                            <img src="img/clients-top-slider-big-pic-1.jpg" alt="наши работы">         
+                        </div>
+                        <div class="item sync1-item">
+                            <img src="img/clients-top-slider-big-pic-1.jpg" alt="наши работы">  
+                        </div>
+                        <div class="item sync1-item">
+                            <img src="img/clients-top-slider-big-pic-1.jpg" alt="наши работы"> 
+                        </div>                        
+                    </div>
+
+                    <div id="sync2" class="owl-carousel sync2">
+                        <div class="item sync2-item">
+                             <img src="img/clients-top-slider-small-pic-1.jpg" alt="наши работы"> 
+                         </div>
+                        <div class="item sync2-item">
+                            <img src="img/clients-top-slider-small-pic-2.jpg" alt="наши работы"> 
+                        </div>
+                        <div class="item sync2-item">
+                            <img src="img/clients-top-slider-small-pic-3.jpg" alt="наши работы"> 
+                        </div>                    
+
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h3 class="clients-slider-headline">«Crazy Town»</h3>
+                    <p>Ресторан в Китае</p>
+                    <ul class="clients-slider-list">
+                        <li><span>Задача:</span> Покрыть равномерным, качественным звучанием площадь ресторана и объединить сигнал с плазмами для трансляции видео событий.</li>
+                        <li><span>Решение:</span> Мы приняли решение инсталировать американский бренд Electro Voice Evit 4.2Т, так как эта модель колонок имеет для нас нужный угол раскрытия. Также эта модель имеет качественное звучание, проверенное годами. С помощью специального ресивера мы объединили звук с видео.</li>
+                        <li><span>Результат:</span> Теперь наши посетители могут смотреть видеоклипы, футбол, фильмы, слушать музыку находясь в любой точке ресторане и при этом не перекрикивать друг друга.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 slider-sec-wrap">
+                <div class="col-md-5 col-md-offset-1 no-padding">
+                    <div id="sync3" class="owl-carousel gallery-slider sync3">
+                        <div class="item sync1-item">
+                            <img src="img/clients-top-slider-big-pic-4.jpg" alt="наши работы">         
+                        </div>
+                        <div class="item sync1-item">
+                            <img src="img/clients-top-slider-big-pic-4.jpg" alt="наши работы">  
+                        </div>
+                        <div class="item sync1-item">
+                            <img src="img/clients-top-slider-big-pic-4.jpg" alt="наши работы"> 
+                        </div>                        
+                    </div>
+
+                    <div id="sync4" class="owl-carousel sync4">
+                        <div class="item sync2-item">
+                             <img src="img/clients-top-slider-small-pic-4.jpg" alt="наши работы"> 
+                         </div>
+                        <div class="item sync2-item">
+                            <img src="img/clients-top-slider-small-pic-5.jpg" alt="наши работы"> 
+                        </div>
+                        <div class="item sync2-item">
+                            <img src="img/clients-top-slider-small-pic-6.jpg" alt="наши работы"> 
+                        </div>                    
+
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h3 class="clients-slider-headline">«Славск»</h3>
+                    <p>Ресторан в Китае</p>
+                    <ul class="clients-slider-list">
+                        <li><span>Задача:</span> Оборудовать виллу для отдыха с персональным клубом и танцополом, а также максимально упростить управление инсаляционным оборудованием.</li>
+                        <li><span>Решение:</span> Мы приняли решение инсталировать профессиональные активные колонки для обеспечения дискотек Electro Voice с диагональю 15 дюймов. Было установленно управление моноблока с компьтера, с помощью внешней звуковой карты синхронизировали видео поток с аудио потоком для выведения их на основную акустическую систему. Данное оборудование  максимально приближено к системе Plug and Play.</li>
+                        <li><span>Результат:</span> Компания или семейная пара отдыхающая на вилле может устроить дискотеку, вечер караоке или просмотр фильма на большом экране.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bottom-form-sec">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="main-headline bottom-form-sec-headline">Замеры площадки для установки акустических систем должен делать опытный специалист:</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-5 col-md-offset-1">
+                        <ul class="bottom-form-fiture-list">
+                            <li class="bottom-form-fiture__item bottom-form-fiture__item_1">
+                                Какая высота от пола до потолка?
+                            </li>
+                            <li class="bottom-form-fiture__item bottom-form-fiture__item_2">
+                                В зале есть колоны и какой их размер?
+                            </li>
+                            <li class="bottom-form-fiture__item bottom-form-fiture__item_3">
+                                Какое покрытие пола или земли?
+                            </li>
+                            <li class="bottom-form-fiture__item bottom-form-fiture__item_1">
+                                Какие есть дополнительные элементы декора (бассейн, аквариум...)?
+                            </li>
+                            <li class="bottom-form-fiture__item bottom-form-fiture__item_2">
+                                Есть ли перепады в плоскости пола?
+                            </li>
+                            <li class="bottom-form-fiture__item bottom-form-fiture__item_3">
+                                Какого типа Ваше помещение: подвал, цоколь, открытое, этаж?
+                            </li>
+                        </ul>                        
+                    </div>
+                    <div class="col-md-4 col-md-offset-1">
+                        <div class="top-form-wrap">
+                            <h3>Заполните форму</h3>
+                            <p>и мы свяжемся с Вами в течение 5 минут, чтобы уточнить адрес для <span>БЕСПЛАТНОГО</span> выезда замерщика</p>
+                            <form action="" method="post" id="main-form-bottom" class="main-form-top" name="main-form">    
                             
                                 <div class="input-group">
                                     <input type="text"  name="name" placeholder="Ваше имя" required>
@@ -164,80 +403,328 @@
                                 </div>
 
                                 <div class="input-group">
-                                    <input type="text"  name="phone" placeholder="Ваш телефон" required>
+                                    <input type="text"  name="phone" id="phone-2" placeholder="Ваш телефон" required>
                                 </div>                                
                             
                                 <input type="hidden" name="whatform" value="">
                                 <button type="submit" name="submit" class="btn form-btn">Получить подарки</button>
-                                <span>Наш менеджер свяжется с Вами в течение 5 минут</span>
+                                <span>Наш менеджер свяжется с Вами <br>в течение 5 минут</span>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>            
+        </div> 
     </div>
 </section>
 
-<section class="">
+<section class="com-mistakes">
     <div class="container clearfix">
-
+        <div class="row">
+            <div class="col-md-9 col-md-offset-1">
+                <h2 class="main-headline com-mistakes-headline">4 самых распространенных ошибки при выборе и установке акустических систем</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-5 col-md-offset-1 com-mistakes-item com-mistakes-item-1">
+                    <img src="img/com-mistakes-pic-1.jpg" alt="ошибки при выборе акустических систем">
+                    <img class="stop-mistake-left" src="img/stop-ico.png" alt="ошибки при выборе акустических систем">
+                </div>
+                <div class="col-md-5 com-mistakes-item com-mistakes-item-2">                   
+                    <img src="img/com-mistakes-pic-2.jpg" alt="ошибки при выборе акустических систем">
+                    <p>Делать самостоятельно замеры своего помещения для определения стоимости закупки акустической системы</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-5 col-md-offset-1 com-mistakes-item com-mistakes-item-3">                    
+                    <img src="img/com-mistakes-pic-3.jpg" alt="ошибки при выборе акустических систем">
+                    <p>Пытаться самостоятельно разобраться в технических характеристиках акустических систем</p>
+                </div>
+                <div class="col-md-5 com-mistakes-item com-mistakes-item-4">
+                    <img src="img/com-mistakes-pic-4.jpg" alt="ошибки при выборе акустических систем">
+                    <img class="stop-mistake-right" src="img/stop-ico.png" alt="ошибки при выборе акустических систем">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-5 col-md-offset-1 com-mistakes-item com-mistakes-item-5">
+                    <img src="img/com-mistakes-pic-5.jpg" alt="ошибки при выборе акустических систем">
+                    <img class="stop-mistake-left" src="img/stop-ico.png" alt="ошибки при выборе акустических систем">
+                </div>
+                <div class="col-md-5 com-mistakes-item com-mistakes-item-6">                    
+                    <img src="img/com-mistakes-pic-6.jpg" alt="ошибки при выборе акустических систем">
+                    <p>Покупают в интернет-магазинах, а потом ищут подрядчиков, которые выполнят установку</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-5 col-md-offset-1 com-mistakes-item com-mistakes-item-7">                    
+                    <img src="img/com-mistakes-pic-7.jpg" alt="ошибки при выборе акустических систем">
+                    <p>Выбирают модели либо по цене, либо по дизайну</p>
+                </div>
+                <div class="col-md-5 com-mistakes-item com-mistakes-item-8">
+                    <img src="img/com-mistakes-pic-8.jpg" alt="ошибки при выборе акустических систем">
+                    <img class="stop-mistake-right" src="img/stop-ico.png" alt="ошибки при выборе акустических систем">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="">
+<section class="change-acc">
     <div class="container clearfix">
-
+        <div class="row">
+            <div class="col-md-7 col-md-offset-1">
+                <h2 class="main-headline change-acc-headline">Обменяйте свою старую <span>акустическую систему на новую</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 col-md-offset-3">
+                <div class="change-acc-info-wrap">
+                    <h3 class="change-acc-sub-headline">Зачем переплачивать?</h3>
+                    <p class="change-acc-text">Получите новую технику взамен на старую с доплатой разницы в ценах.</p>
+                    <a href="#" class="btn form-btn change-acc-btn" data-remodal-target="modal-1">обменять технику</a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="">
+<section class="clients clients-bottom">
     <div class="container clearfix">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="main-headline clients-top-headline">Каждое их слово это показатель эффективности нашей работы</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 slider-sec-wrap">
+                <div class="col-md-5 col-md-offset-1 no-padding">
+                    <div id="sync5" class="owl-carousel gallery-slider sync5">
+                        <div class="item sync1-item">
+                            <img src="img/clients-top-slider-big-pic-1.jpg" alt="наши работы">         
+                        </div>
+                        <div class="item sync1-item">
+                            <img src="img/clients-top-slider-big-pic-1.jpg" alt="наши работы">  
+                        </div>
+                        <div class="item sync1-item">
+                            <img src="img/clients-top-slider-big-pic-1.jpg" alt="наши работы"> 
+                        </div>                        
+                    </div>
 
+                    <div id="sync6" class="owl-carousel sync6">
+                        <div class="item sync2-item">
+                             <img src="img/clients-top-slider-small-pic-1.jpg" alt="наши работы"> 
+                         </div>
+                        <div class="item sync2-item">
+                            <img src="img/clients-top-slider-small-pic-2.jpg" alt="наши работы"> 
+                        </div>
+                        <div class="item sync2-item">
+                            <img src="img/clients-top-slider-small-pic-3.jpg" alt="наши работы"> 
+                        </div>                    
+
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h3 class="clients-slider-headline">«L`UFT»</h3>
+                    <p>Ресторан в Китае</p>
+                    <ul class="clients-slider-list">
+                        <li><span>Задача:</span> Покрыть равномерным, качественным звучанием площадь ресторана и объединить сигнал с плазмами для трансляции видео событий.</li>
+                        <li><span>Решение:</span> Мы приняли решение инсталировать американский бренд Electro Voice Evit 4.2Т, так как эта модель колонок имеет для нас нужный угол раскрытия. Также эта модель имеет качественное звучание, проверенное годами. С помощью специального ресивера мы объединили звук с видео.</li>
+                        <li><span>Результат:</span> Теперь наши посетители могут смотреть видеоклипы, футбол, фильмы, слушать музыку находясь в любой точке ресторане и при этом не перекрикивать друг друга.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 slider-sec-wrap">
+                <div class="col-md-5 col-md-offset-1 no-padding">
+                    <div id="sync7" class="owl-carousel gallery-slider sync7">
+                        <div class="item sync1-item">
+                            <img src="img/clients-top-slider-big-pic-4.jpg" alt="наши работы">         
+                        </div>
+                        <div class="item sync1-item">
+                            <img src="img/clients-top-slider-big-pic-4.jpg" alt="наши работы">  
+                        </div>
+                        <div class="item sync1-item">
+                            <img src="img/clients-top-slider-big-pic-4.jpg" alt="наши работы"> 
+                        </div>                        
+                    </div>
+
+                    <div id="sync8" class="owl-carousel sync8">
+                        <div class="item sync2-item">
+                             <img src="img/clients-top-slider-small-pic-4.jpg" alt="наши работы"> 
+                         </div>
+                        <div class="item sync2-item">
+                            <img src="img/clients-top-slider-small-pic-5.jpg" alt="наши работы"> 
+                        </div>
+                        <div class="item sync2-item">
+                            <img src="img/clients-top-slider-small-pic-6.jpg" alt="наши работы"> 
+                        </div>                    
+
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h3 class="clients-slider-headline">«Славск»</h3>
+                    <p>Ресторан в Китае</p>
+                    <ul class="clients-slider-list">
+                        <li><span>Задача:</span> Оборудовать виллу для отдыха с персональным клубом и танцополом, а также максимально упростить управление инсаляционным оборудованием.</li>
+                        <li><span>Решение:</span> Мы приняли решение инсталировать профессиональные активные колонки для обеспечения дискотек Electro Voice с диагональю 15 дюймов. Было установленно управление моноблока с компьтера, с помощью внешней звуковой карты синхронизировали видео поток с аудио потоком для выведения их на основную акустическую систему. Данное оборудование  максимально приближено к системе Plug and Play.</li>
+                        <li><span>Результат:</span> Компания или семейная пара отдыхающая на вилле может устроить дискотеку, вечер караоке или просмотр фильма на большом экране.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section class="">
+<section class="free-mesure">
     <div class="container clearfix">
-
+        <div class="row">
+            <div class="col-md-9 col-md-offset-1">
+                <h2 class="main-headline freemesure-headline">Получить бесплатный замер очень просто</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-1 free-mesure-item">
+                <div class="mesure-content-wrap mesure-content-wrap-1">
+                    <div class="free-mesure-circle-big">
+                        <div class="free-mesure-circle-small">
+                            <span>1</span>
+                        </div>
+                    </div>
+                    <p>Оставьте заявку на замер</p>
+                    <a href="" class="btn form-btn free-mesure-btn free-mesure-btn-1" data-remodal-target="modal-1">оставить заявку</a>
+                </div>
+            </div>
+            <div class="col-md-3 free-mesure-item">
+                <div class="mesure-content-wrap mesure-content-wrap-2">
+                    <div class="free-mesure-circle-big">
+                        <div class="free-mesure-circle-small">
+                            <span>2</span>
+                        </div>
+                    </div>
+                    <p>Наш менеджер свяжется с Вами в течение 2-5 мин., чтобы уточнить некоторые детали</p> 
+                </div>
+            </div>
+            <div class="col-md-3 free-mesure-item">
+                <div class="mesure-content-wrap mesure-content-wrap-3">
+                    <div class="free-mesure-circle-big">
+                        <div class="free-mesure-circle-small">
+                            <span>3</span>
+                        </div>
+                    </div>                
+                    <p>Выезд профессионального специалиста к Вам на замер</p>
+                </div>
+            </div>
+            <div class="col-md-2 free-mesure-item">
+                <div class="mesure-content-wrap mesure-content-wrap-4">
+                    <div class="free-mesure-circle-big">
+                        <div class="free-mesure-circle-small">
+                            <span>4</span>
+                        </div>
+                    </div>
+                    <p>Составляем для Вас 1-3 предложения по установке акустики</p>
+                    <a href="#" class="btn form-btn free-mesure-btn free-mesure-btn-2" data-remodal-target="modal-1">оставить заявку</a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-
-<section class="">
-    <div class="container clearfix">
-
+<section class="contacts">
+    <div class="contacts-map">
+        <div class="contacts-block-wrap">
+            <div class="contacts-inner">
+                <h2 class="main-headline contacts-headline">Связаться с нами очень просто</h2>
+                <p>+38 063-358-91-17</p>
+                <p>arenaconcert4@gmail.com</p>
+                <p>Украина, г. Львов, ул. Ш.Руставели 7, 
+                <br>офис 223</p>
+                <span class="social-icons social-icon_1">
+                    <a href="https://www.instagram.com/arena.center/" target="blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <span class="social-icons social-icon_2">
+                    <a href="https://www.facebook.com/arenacenter7777/?ref=bookmarks" target="blank"> 
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </span>
+             </div>
+        </div>        
     </div>
-</section>
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=BG0BpUtrgwzSPQOC31V2U4Q9G9DKLCqj&width=100%&height=650&lang=ru_RU&sourceType=constructor"></script>
 
-<section class="">
-    <div class="container clearfix">
 
-    </div>
-</section>
-
-<section class="">
-    <div class="container clearfix">
-
-    </div>
-</section>
-
-<section class="">
-    <div class="container clearfix">
-
-    </div>
-</section>
-
-<section class="">
-    <div class="container clearfix">
-
-    </div>
 </section>
 
 <footer class="main-footer">
     <div class="container clearfix">
-
+        <div class="row">
+            <div class="col-md-3">
+               <div class="footer-info">
+                    <div class="footer-info-inner">
+                       <a href="http://arena-center.com.ua/" target="blank">
+                           <img src="img/logo-bottom.png" alt="логотип арена центр">
+                       </a>
+                   </div>
+               </div>
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+                <div class="footer-info">
+                    <div class="footer-info-inner">
+                        <span>© Арена центр 2016. Все права защищены.</span>
+                        <span>Проект разработан в <a href="#">КнБStudio</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <div class="footer-info">
+                    <div class="footer-info-inner">
+                        <span>Пн — Вс, 8:00 — 8:00</span>
+                        <span>Без выходных и круглосуточно</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
+<!-- Popup itself -->
+<div class="remodal" data-remodal-id="modal-1" id="modal-1">
+    <button data-remodal-action="close" class="remodal-close"></button>
+      <div class="top-form-wrap remodal-form-wrap" >
+        <h3>Оставьте свои <br>контактные данные</h3>   
+        <p>и наш менеджер свяжется<br>с Вами в течении 5 минут.</p>
+        <form action="mail.php" method="post" id="modal-form" class="main-form-top" name="main-form">    
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="lawn">
+            <input type="hidden" name="admin_email" value="yevgheny78@gmail.com">
+            <input type="hidden" name="form_subject" value="Заявка с сайта arena-center">
+            <!-- END Hidden Required Fields -->
+            <div class="input-group">
+                <input type="text"  name="name" placeholder="Ваше имя" required>
+            </div> 
+
+            <div class="input-group">
+                <input type="text"  name="email" placeholder="Ваш email" required>
+            </div>
+
+            <div class="input-group">
+                <input type="text"  name="phone" id="phone-3" placeholder="Ваш телефон" required>
+            </div>                                
+        
+            <input type="hidden"  name="s_formi" value="Получить подарки">
+            <button type="submit" name="submit" class="btn form-btn">Получить подарки</button>
+            <span>Наш менеджер свяжется с Вами <br>в течение 5 минут</span>
+        </form>
+    </div>
+</div>
 
 
 <div class="hidden"></div>
@@ -256,6 +743,10 @@
             ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
         }
         loadCSS("libs/animate/animate.css"); //Load Libs CSS: Animate CSS
+        loadCSS("libs/owl-carousel/owl.carousel.css"); //Owl-carousel CSS
+        loadCSS("libs/owl-carousel/owl.theme.css"); //Owl-carousel theme CSS
+        loadCSS("libs/remodal/remodal-default-theme.css"); //remodal Popup CSS
+        loadCSS("libs/remodal/remodal.css"); //remodal Popup CSS
         loadCSS("_header.css");              //Header Styles (compress & paste to header after release)
         loadCSS("_main.css");                //User Styles: Main
         loadCSS("_media.css");               //User Styles: Media
@@ -272,9 +763,81 @@
         {"src" : "libs/jquery/jquery-1.11.2.min.js", "async" : false},
         {"src" : "libs/waypoints/waypoints.min.js", "async" : false},
         {"src" : "libs/animate/animate-css.js", "async" : false},
+        {"src" : "libs/remodal/remodal.min.js", "async" : false},
+        {"src" : "libs/validate/jquery.validate.min.js", "async" : false},
+        {"src" : "libs/validate/messages_ru.min.js", "async" : false},
+        {"src" : "libs/inputmask/jquery.inputmask.bundle.min.js", "async" : false},
         {"src" : "libs/plugins-scroll/plugins-scroll.js", "async" : false},
+        {"src" : "libs/owl-carousel/owl.carousel.min.js", "async" : false},
         {"src" : "js/common.js", "async" : false}
         ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+    </script>
+
+    <!-- Скрипт Timer -->
+
+    <script type="text/javascript">
+        day = 15; hour= 2; minute= 55; sec= 56;
+        function CountBox(boxId) {
+        dateNow = new Date;
+        amount = dateFuture - dateNow.getTime() + 5;
+        delete dateNow;
+        if (amount < 0) {
+            out = "<div class='countbox-num'><div id='countbox-days1'><span></span>0</div><div id='countbox-days2'><span></span>0</div><div id='countbox-days-text'></div></div>" +
+            "<div class='countbox-space'></div>" +
+            "<div class='countbox-num'><div id='countbox-hours1'><span></span>0</div><div id='countbox-hours2'><span></span>0</div><div id='countbox-hours-text'></div></div>" +
+            "<div class='countbox-space'></div>" +
+            "<div class='countbox-num'><div id='countbox-mins1'><span></span>0</div><div id='countbox-mins2'><span></span>0</div><div id='countbox-mins-text'></div></div>" +
+            "<div class='countbox-space'></div>" +
+            "<div class='countbox-num  countbox-num__sec'><div id='countbox-secs1'><span></span>0</div><div id='countbox-secs2'><span></span>0</div><div id='countbox-secs-text'></div></div>";
+            document.getElementById(boxId).innerHTML = out
+        } else {
+            days = 0;
+            days1 = 0;
+            days2 = 0;
+            hours = 0;
+            hours1 = 0;
+            hours2 = 0;
+            mins = 0;
+            mins1 = 0;
+            mins2 = 0;
+            secs = 0;
+            secs1 = 0;
+            secs2 = 0;
+            out = "";
+            amount = Math.floor(amount / 1e3);
+            days = Math.floor(amount / 86400);
+            days1 = (days >= 10) ? days.toString().charAt(0) : '0';
+            days2 = (days >= 10) ? days.toString().charAt(1) : days.toString().charAt(0);
+            amount = amount % 86400;
+            hours = Math.floor(amount / 3600);
+            hours1 = (hours >= 10) ? hours.toString().charAt(0) : '0';
+            hours2 = (hours >= 10) ? hours.toString().charAt(1) : hours.toString().charAt(0);
+            amount = amount % 3600;
+            mins = Math.floor(amount / 60);
+            mins1 = (mins >= 10) ? mins.toString().charAt(0) : '0';
+            mins2 = (mins >= 10) ? mins.toString().charAt(1) : mins.toString().charAt(0);
+            amount = amount % 60;
+            secs = Math.floor(amount);
+            secs1 = (secs >= 10) ? secs.toString().charAt(0) : '0';
+            secs2 = (secs >= 10) ? secs.toString().charAt(1) : secs.toString().charAt(0);
+            out = "<div class='countbox-num'><div id='countbox-days1'><span></span>" + days1 + "</div><div id='countbox-days2'><span></span>" + days2 + "</div><div id='countbox-days-text'></div></div>" +
+            "<div class='countbox-space'></div>" +
+            "<div class='countbox-num'><div id='countbox-hours1'><span></span>" + hours1 + "</div><div id='countbox-hours2'><span></span>" + hours2 + "</div><div id='countbox-hours-text'></div></div>" +
+            "<div class='countbox-space'></div>" +
+            "<div class='countbox-num'><div id='countbox-mins1'><span></span>" + mins1 + "</div><div id='countbox-mins2'><span></span>" + mins2 + "</div><div id='countbox-mins-text'></div></div>" +
+            "<div class='countbox-space'></div>" +
+            "<div class='countbox-num  countbox-num__sec'><div id='countbox-secs1'><span></span>" + secs1 + "</div><div id='countbox-secs2'><span></span>" + secs2 + "</div><div id='countbox-secs-text'></div></div>";
+            document.getElementById(boxId).innerHTML = out;
+            setTimeout(function(){
+             CountBox(boxId);
+            }, 1e3)
+        }
+    }
+        dateFuture = new Date().getTime() + ((day*24 + hour)*60*60 + minute*60 + sec)*1000;
+        window.onload = function () {
+            CountBox('countbox');
+            CountBox('countbox1');
+        }
     </script>
 
 </body>
