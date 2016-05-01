@@ -43,7 +43,7 @@
 	padding-top: 4rem;
 	padding-left: 3.5rem; 
 	padding-right: 3.5rem;
-	padding-bottom: 1.5rem;
+	padding-bottom: 3.5rem;
 	background: #FFB163;
 	text-align: center;
 
@@ -55,6 +55,7 @@
 	}
 
 	p {
+		font-size: 1.8rem;
 		color: #7f3f00;
 		text-align: left;
 		padding-left: 1rem;
@@ -107,86 +108,7 @@ input.error {
 	border: 3px solid red !important;
 }
 
-/* Timer */
 
-#countbox {
-	color: #fff;	
-	font-size: 36px;
-	font-weight: 700;
-	height: 93px;
-	line-height: 60px;
-	margin: 0 0 20px;
-	padding: 0;
-	width: 385px;
-}
-#countbox .countbox-num {
-	max-width: 80px;
-	max-height: 80px;
-	float: left;	
-	text-align: center;
-	border-radius: 10px;
-	background: -moz-linear-gradient( 124deg, rgb(227,111,160) 0%, rgb(151,66,219) 100%);
-	background: -webkit-linear-gradient( 124deg, rgb(227,111,160) 0%, rgb(151,66,219) 100%);
-	background: -ms-linear-gradient( 124deg, rgb(227,111,160) 0%, rgb(151,66,219) 100%);  
-	margin-right: 10px;
-	padding: 0 22px 20px 12px; 
-}
-#countbox .countbox-space
-{
-	float: left;
-	height: 90px;
-	width: 8px;
-}
-#countbox-days1,#countbox-hours1,#countbox-mins1,#countbox-secs1,#countbox-days2,#countbox-hours2,#countbox-mins2,#countbox-secs2
-{	
-	float: left;	
-	margin: 0 -10px 0 0;
-	text-align: center;
-	min-width: 33px;
-	z-index: 1;
-}
-#countbox .countbox-num__sec {	
-	color: #ffffff;  
-	background: -moz-linear-gradient( 126deg, rgb(255,178,98) 0%, rgb(255,94,171) 100%);
-	background: -webkit-linear-gradient( 126deg, rgb(255,178,98) 0%, rgb(255,94,171) 100%);
-	background: -ms-linear-gradient( 126deg, rgb(255,178,98) 0%, rgb(255,94,171) 100%);
-}
-#countbox-days-text,#countbox-hours-text,#countbox-mins-text,#countbox-secs-text { 
-	position: relative;	
-	font-size: 16px;
-	color: #fff;
-	font-weight: 400;
-	margin-top: 3px;
-}
-#countbox-days-text:before {
-	position: absolute;
-	top: 25px;
-	left: 10px;
-	display: block;
-	content: "дней";
-}
-#countbox-hours-text:before {
-	position: absolute;
-	top: 25px;
-	left: 5px;
-	display: block;
-	content: "часов";
-}
-#countbox-mins-text:before {
-	content: "минут";
-	position: absolute;
-	top: 25px;
-	left: 5px;
-	display: block;
-}
-#countbox-secs-text:before {
-	content: "секунд";
-	position: absolute;
-	top: 25px;
-	left: 0;
-	display: block;
-	color: #fff;
-}
 
 
 

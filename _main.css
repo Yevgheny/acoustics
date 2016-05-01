@@ -132,7 +132,7 @@ p {
   line-height: 1.3;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 3.2rem;
   line-height: 1.3;
 }
 h2 {
@@ -178,7 +178,7 @@ a:hover {
   text-shadow: 0px -1px 0px rgba(39, 18, 14, 0.36);
   border-radius: 5px;
   border: none;
-  padding: 1.8rem 5.4rem;
+  padding: 1.8rem 4.8rem;
   background: -moz-linear-gradient(90deg, #3cc868 35%, #20b252 100%);
   background: -webkit-linear-gradient(90deg, #3cc868 35%, #20b252 100%);
   background: -ms-linear-gradient(90deg, #3cc868 35%, #20b252 100%);
@@ -205,6 +205,9 @@ a:hover {
 .form-btn:focus {
   text-decoration: none;
   outline: none;
+}
+.mdl-btn {
+  padding: 1.8rem 5.4rem;
 }
 input,
 textarea {
@@ -311,7 +314,7 @@ textarea:focus:-ms-input-placeholder {
   padding-top: 4rem;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 3.5rem;
   background: #FFB163;
   text-align: center;
 }
@@ -322,6 +325,7 @@ textarea:focus:-ms-input-placeholder {
   margin-bottom: 1.5rem;
 }
 .top-form-wrap p {
+  font-size: 1.8rem;
   color: #7f3f00;
   text-align: left;
   padding-left: 1rem;
@@ -470,6 +474,23 @@ input.error {
   line-height: 2;
   margin: 3.5rem 0;
 }
+.why-we-are {
+  background: #EEF2F4;
+  padding-bottom: 14.5rem;
+  border-bottom: 1px solid #E4E4E4;
+}
+.why-we-are img {
+  max-width: 100%;
+}
+.why-we-are-headline {
+  padding-top: 10rem;
+  margin-bottom: 10rem;
+}
+.why-we-are-item p {
+  font-size: 1.8rem;
+  max-width: 470px;
+  margin: 0 auto;
+}
 .success-work {
   width: 100%;
   min-height: 694px;
@@ -497,14 +518,18 @@ input.error {
   width: 100%;
   min-height: 940px;
   padding-top: 10rem;
-  background: url("img/top-form-sec-bgr.jpg") no-repeat bottom center;
+  background: url("img/options-bgr.jpg") no-repeat top center;
   background-size: cover;
 }
 .options img {
   max-width: 100%;
+  margin-bottom: 2rem;
+}
+.options p {
+  margin-bottom: 6.5rem;
 }
 .options-headline {
-  padding-right: 8.3rem;
+  padding-right: 4.3rem;
   margin-bottom: 9rem;
 }
 .options-list {
@@ -555,12 +580,20 @@ input.error {
 #sync8 .owl-wrapper {
   margin-top: 1.2rem;
 }
+#sync2 .owl-item,
+#sync4 .owl-item,
+#sync6 .owl-item,
+#sync8 .owl-item {
+  padding: 0.5rem;
+}
 .sync1-item {
   max-width: 470px;
   border-radius: 15px;
   overflow: hidden;
 }
 .sync2-item {
+  border-radius: 11px;
+  overflow: hidden;
   cursor: pointer;
 }
 .slider-sec-wrap {
@@ -575,13 +608,11 @@ input.error {
   padding-bottom: 3rem;
 }
 .bottom-form-sec-headline {
-  color: #ffffff;
   margin-bottom: 8rem;
 }
 .bottom-form-fiture__item {
   min-height: 39px;
   font-size: 1.8rem;
-  color: #ffffff;
   font-weight: 700;
   line-height: 1.3;
   background: url("img/main-screen-ico.png") no-repeat top left;
@@ -671,7 +702,7 @@ input.error {
   display: inline-block;
   text-decoration: none;
   outline: none;
-  margin-top: 4rem;
+  margin-top: 0;
 }
 .change-acc-btn:hover,
 .form-btn:hover {
@@ -683,10 +714,14 @@ input.error {
   text-decoration: none;
   color: #ffffff;
 }
+.change-acc-btn {
+  margin-top: 4rem;
+}
 .clients-bottom {
   background: url("img/clients-bottom-bgr.png") no-repeat top center;
   background-size: cover;
-  min-height: 1728px;
+  min-height: 1580px;
+  padding-top: 75px;
   margin-bottom: -345px;
   position: relative;
   z-index: 20;
@@ -703,6 +738,9 @@ input.error {
 .free-mesure h2,
 .free-mesure p {
   color: #7f3f00;
+}
+.free-mesure .free-mesure-btn-1 {
+  margin-top: 15px;
 }
 .freemesure-headline {
   margin-bottom: 10rem;
@@ -784,6 +822,13 @@ input.error {
   font-size: 1.8rem;
   margin-bottom: 3.5rem;
 }
+.contacts_tel,
+.contacts_mail {
+  display: block;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 3.5rem;
+}
 .contacts-headline {
   margin-bottom: 7rem;
 }
@@ -825,7 +870,7 @@ input.error {
 .main-footer {
   width: 100%;
   min-height: 90px;
-  background: #F2F2F2;
+  background: #fff;
 }
 .footer-info {
   width: 100%;
