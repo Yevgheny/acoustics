@@ -331,11 +331,14 @@ $(document).ready(function() {
 jQuery(function(a){a(document).ready(function(){
   a("#main-form-top").validate();
   a("#main-form-bottom").validate();
-  a("#modal-form").validate()})});  
+  a("#modal-form").validate();
+  a("#modal-form-1").validate()})}); 
+
 
 $(document).ready(function(){
   $('body').addClass('loaded');
   $("#phone").inputmask("+38(999) 999-99-99");
   $("#phone-2").inputmask("+38(999) 999-99-99");
   $("#phone-3").inputmask("+38(999) 999-99-99");
+  $("#phone-4").inputmask("+38(999) 999-99-99");
 });

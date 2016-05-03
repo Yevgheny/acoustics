@@ -207,7 +207,7 @@ a:hover {
   outline: none;
 }
 .mdl-btn {
-  padding: 1.8rem 5.4rem;
+  padding: 1.8rem 6.1rem;
 }
 input,
 textarea {
@@ -364,93 +364,6 @@ textarea:focus:-ms-input-placeholder {
 }
 input.error {
   border: 3px solid red !important;
-}
-/* Timer */
-#countbox {
-  color: #fff;
-  font-size: 36px;
-  font-weight: 700;
-  height: 93px;
-  line-height: 60px;
-  margin: 0 0 20px;
-  padding: 0;
-  width: 385px;
-}
-#countbox .countbox-num {
-  max-width: 80px;
-  max-height: 80px;
-  float: left;
-  text-align: center;
-  border-radius: 10px;
-  background: -moz-linear-gradient(124deg, #e36fa0 0%, #9742db 100%);
-  background: -webkit-linear-gradient(124deg, #e36fa0 0%, #9742db 100%);
-  background: -ms-linear-gradient(124deg, #e36fa0 0%, #9742db 100%);
-  margin-right: 10px;
-  padding: 0 22px 20px 12px;
-}
-#countbox .countbox-space {
-  float: left;
-  height: 90px;
-  width: 8px;
-}
-#countbox-days1,
-#countbox-hours1,
-#countbox-mins1,
-#countbox-secs1,
-#countbox-days2,
-#countbox-hours2,
-#countbox-mins2,
-#countbox-secs2 {
-  float: left;
-  margin: 0 -10px 0 0;
-  text-align: center;
-  min-width: 33px;
-  z-index: 1;
-}
-#countbox .countbox-num__sec {
-  color: #ffffff;
-  background: -moz-linear-gradient(126deg, #ffb262 0%, #ff5eab 100%);
-  background: -webkit-linear-gradient(126deg, #ffb262 0%, #ff5eab 100%);
-  background: -ms-linear-gradient(126deg, #ffb262 0%, #ff5eab 100%);
-}
-#countbox-days-text,
-#countbox-hours-text,
-#countbox-mins-text,
-#countbox-secs-text {
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  font-weight: 400;
-  margin-top: 3px;
-}
-#countbox-days-text:before {
-  position: absolute;
-  top: 25px;
-  left: 10px;
-  display: block;
-  content: "дней";
-}
-#countbox-hours-text:before {
-  position: absolute;
-  top: 25px;
-  left: 5px;
-  display: block;
-  content: "часов";
-}
-#countbox-mins-text:before {
-  content: "минут";
-  position: absolute;
-  top: 25px;
-  left: 5px;
-  display: block;
-}
-#countbox-secs-text:before {
-  content: "секунд";
-  position: absolute;
-  top: 25px;
-  left: 0;
-  display: block;
-  color: #fff;
 }
 .difficulties {
   width: 100%;
@@ -720,7 +633,7 @@ input.error {
 .clients-bottom {
   background: url("img/clients-bottom-bgr.png") no-repeat top center;
   background-size: cover;
-  min-height: 1580px;
+  min-height: 1260px;
   padding-top: 75px;
   margin-bottom: -345px;
   position: relative;
