@@ -1,3 +1,9 @@
+<head>
+	
+	<meta http-equiv="refresh" content="0; url=http://sound.arena-center.com.ua/thanks.html" />
+
+</head>
+
 <?php
 
 $method = $_SERVER['REQUEST_METHOD'];
